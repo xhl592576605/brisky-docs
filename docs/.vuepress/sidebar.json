@@ -26,18 +26,23 @@
       "/Core/option.md",
       "/Core/frame.md",
       "/Core/functions.md"
-
     ]
   },
   {
     "title": "Views",
     "text": "Views",
-    "children": []
+    "children": [
+      "/Views/quick-start.md"
+    ]
   },
   {
     "title": "Cli",
     "text": "Cli",
-    "children": []
+    "children": [
+      "/Cli/quick-start.md",
+      "/Cli/cli.md",
+      "/Cli/vue-cli-plugin.md"
+    ]
   },
   {
     "title": "Admin",
