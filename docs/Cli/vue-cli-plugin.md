@@ -1,36 +1,14 @@
-# 基础
-> brisky的核心，一套生命周期，可扩展的插件，一个可定制化的vueApp
+# vue-cli-plugin
+> 插件按照brisky的特性扩展了vue-cli的打包,支持模板生成，多组件编译，性能优化，编译对比,mock机制
 
-core是整个brisky，它承担的就是创建vue，并且他而外扩展的生命周期，不仅仅限于vue的生命周期，你完全可以做这类生命周期做想要做的事情，比如获取菜单等等，当然我们也集成了这些基础的内容，像登录，获取用户信息，获取菜单，根据菜单构建动态路由，可以完整构建一个web，你完全可以直接考虑业务，无需要考虑底层
+## 模板生成
 
-## 快速开始
+因为使用了vue-cli的插件，增加了`generator`,一个普通的vue可以直接生成对应的brisky框架
 
-### 安装
-``` sh
-# 最新稳定版
-$ npm install @brisky/core
-```
+## 编译扩展
 
-### 调用
+使用了`api.chainWebpack`来扩展webpack
 
-直接使用init变可以初始化一个vueApp
 
-``` js
-   $core.init()
-```
-效果
-![CoreBase](/brisky-docs/images/CoreBase.png)
-## 依赖
-``` sh
-npm i lodash
-npm i @brisky/api
-npm i @brisky/eventbus
-npm i @brisky/util
-npm i crypto-js
-npm i js-cookie
-npm i query-string
-npm i requirejs
-npm i vue@next
-npm i vue-router@next
-npm i vuex@next
-```
+#tip
+> 具体内容太多，不展开讲解，后续在views，admin项目会着重讲解如何使用，有兴趣直接看源码
